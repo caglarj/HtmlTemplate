@@ -1,0 +1,96 @@
+body {
+  max-width: 55%;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: justify;
+  line-height: 1.5em;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 45em;
+}
+
+h1 {
+  font-size: 160%;
+  font-weight: normal;
+  font-family: "Charcoal", "Kalimati", "Verdana", sans-serif;
+}
+
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "Charcoal", "Kalimati", "Verdana", sans-serif;
+}
+
+pre {
+  padding: 1em;
+  border: 1px solid black;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Accordion Menu */
+
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+.accordion-header::after {
+  content: "\002B";
+  float: right;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item.active .accordion-header::after {
+  content: "\2212";
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  padding: 0.1rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+.accordion-item.active .accordion-body {
+  height: auto;
+  transition: height 0.4s ease-in-out;
+}
+
+/* CSS Code */
+
+code{
+display:block;
+font-family: Consolas, Monaco, Andale monospace;
+font-size: 14px;
+margin-left : 10px;
+color: #000099;
+background-color: #ffcc00;
+}
+
+
